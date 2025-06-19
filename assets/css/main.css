@@ -1309,6 +1309,28 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
