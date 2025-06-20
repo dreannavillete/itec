@@ -702,26 +702,6 @@ section,
   }
 }
 
-@media (max-width: 768px) {
-  .hero {
-    background-size: contain !important;
-    background-position: center top !important;
-  }
-
-  .hero {
-    height: 100vh;
-    padding: 0;
-  }
-
-  .hero .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
