@@ -649,14 +649,6 @@ section,
   justify-content: center;
 }
 
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 90%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
 .hero .container {
   position: relative;
   z-index: 3;
@@ -707,6 +699,26 @@ section,
 
   100% {
     transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: contain !important;
+    background-position: center top !important;
+  }
+
+  .hero {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
