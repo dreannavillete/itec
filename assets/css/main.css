@@ -637,10 +637,10 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+  .hero {
   background-image: url(../img/IMG_8025.JPG);
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
   background-attachment: scroll;
   min-height: 100vh;
@@ -649,6 +649,7 @@ section,
   justify-content: center;
   position: relative;
 }
+
 
 .hero:before {
   content: "";
@@ -1300,6 +1301,14 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+  }
 }
 
 /*--------------------------------------------------------------
