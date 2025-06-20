@@ -711,6 +711,13 @@ section,
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
