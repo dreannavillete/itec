@@ -638,15 +638,16 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  background: url(../img/IMG_8025.JPG) top center no-repeat;
+  background-image: url(../img/IMG_8025.JPG);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  min-height: 120vh;
-  position: relative;
-  padding: 120px 0 60px 0;
+  background-attachment: scroll;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero:before {
