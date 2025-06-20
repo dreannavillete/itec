@@ -713,8 +713,8 @@ section,
 
 @media (max-width: 768px) {
   .hero {
-    background-size: cover !important;
-    background-position: center center !important;
+    background-size: contain !important;
+    background-position: center top !important;
   }
 }
 
