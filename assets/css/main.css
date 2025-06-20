@@ -728,6 +728,9 @@ section,
 #hero {
   height: 100vh; /* takes full screen height */
 }
+#hero {
+  background-color: pink !important;
+}
 
 /*--------------------------------------------------------------
 # About Section
