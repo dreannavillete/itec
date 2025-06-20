@@ -638,20 +638,27 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
   .hero {
-  background-image: url(../img/IMG_8025.JPG);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: scroll;
-  min-height: 100vh;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  text-align: center;
 }
 
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 
-.hero:before {
+.hero::before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 90%);
   position: absolute;
@@ -662,28 +669,22 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  padding: 20px;
+  color: white;
 }
 
 .hero h2 {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 1.2;
 }
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin: 10px 0 0 0;
+  margin-top: 10px;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 1px;
-}
-
-@media (max-width: 640px) {
-  .hero h1 {
-    font-size: 30px;
-    line-height: 36px;
-  }
 }
 
 .hero .btn-scroll {
@@ -706,16 +707,8 @@ section,
   0% {
     transform: translateY(5px);
   }
-
   100% {
     transform: translateY(-5px);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    background-size: contain !important;
-    background-position: center top !important;
   }
 }
 
