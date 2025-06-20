@@ -717,6 +717,17 @@ section,
     background-position: center center !important;
   }
 }
+#hero {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 100vh;
+  width: 100%;
+}
+
+#hero {
+  height: 100vh; /* takes full screen height */
+}
 
 /*--------------------------------------------------------------
 # About Section
